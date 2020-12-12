@@ -54,21 +54,21 @@ install denhotspots from GitHub.
 Mac
 ``` r
 # install.packages("devtools")
-devtools::install_github("fdzul/denhotspots")
+devtools::install_github("fdzul/covid19mx")
 ``` 
 
 Linux
 ``` r
 # install.packages("remotes")
-remotes::install_github("fdzul/denhotspots")
+remotes::install_github("fdzul/covid19mx")
 ``` 
 ## Example
 
 This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
-#library(covid19mx)
 ## basic example code
+knitr::kable(head(covid19mx::covid19mx))
 ```
 
 

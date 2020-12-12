@@ -55,14 +55,14 @@ Mac
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("fdzul/denhotspots")
+devtools::install_github("fdzul/covid19mx")
 ```
 
 Linux
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("fdzul/denhotspots")
+remotes::install_github("fdzul/covid19mx")
 ```
 
 ## Example
@@ -70,6 +70,15 @@ remotes::install_github("fdzul/denhotspots")
 This is a basic example which shows you how to solve a common problem:
 
 ``` r
-#library(covid19mx)
 ## basic example code
+knitr::kable(head(covid19mx::covid19mx))
 ```
+
+| FECHA\_ACTUALIZACION | ID\_REGISTRO | ORIGEN | SECTOR | ENTIDAD\_UM | SEXO | ENTIDAD\_NAC | ENTIDAD\_RES | MUNICIPIO\_RES | TIPO\_PACIENTE | FECHA\_INGRESO | FECHA\_SINTOMAS | FECHA\_DEF | INTUBADO | NEUMONIA | EDAD | NACIONALIDAD | EMBARAZO | HABLA\_LENGUA\_INDIG | INDIGENA | DIABETES | EPOC | ASMA | INMUSUPR | HIPERTENSION | OTRA\_COM | CARDIOVASCULAR | OBESIDAD | RENAL\_CRONICA | TABAQUISMO | OTRO\_CASO | TOMA\_MUESTRA\_LAB | RESULTADO\_LAB | TOMA\_MUESTRA\_ANTIGENO | RESULTADO\_ANTIGENO | CLASIFICACION\_FINAL | MIGRANTE | PAIS\_NACIONALIDAD | PAIS\_ORIGEN | UCI |
+|:---------------------|:-------------|-------:|-------:|------------:|-----:|-------------:|-------------:|---------------:|---------------:|:---------------|:----------------|:-----------|---------:|---------:|-----:|-------------:|---------:|---------------------:|---------:|---------:|-----:|-----:|---------:|-------------:|----------:|---------------:|---------:|---------------:|-----------:|-----------:|-------------------:|---------------:|------------------------:|--------------------:|---------------------:|---------:|:-------------------|:-------------|----:|
+| 2020-12-11           | 02ab03       |      2 |     12 |          26 |    1 |           26 |           26 |             30 |              1 | 2020-03-31     | 2020-03-28      | 9999-99-99 |       97 |        2 |   18 |            1 |        2 |                    2 |        2 |        2 |    2 |    2 |        2 |            2 |         2 |              2 |        2 |              2 |          2 |          1 |                  1 |              1 |                       2 |                  97 |                    3 |       99 | México             | 97           |  97 |
+| 2020-12-11           | 11c483       |      1 |     12 |          29 |    1 |           29 |           29 |             33 |              1 | 2020-04-01     | 2020-03-28      | 9999-99-99 |       97 |        2 |   43 |            1 |        2 |                    2 |        2 |        1 |    2 |    2 |        2 |            2 |         2 |              2 |        2 |              2 |          2 |          2 |                  1 |              1 |                       2 |                  97 |                    3 |       99 | México             | 97           |  97 |
+| 2020-12-11           | 156b1d       |      1 |      9 |           9 |    1 |            9 |            9 |              4 |              1 | 2020-03-14     | 2020-03-11      | 9999-99-99 |       97 |        2 |   42 |            1 |        2 |                    2 |        2 |        2 |    2 |    1 |        2 |            2 |         2 |              2 |        2 |              2 |          1 |          1 |                  1 |              1 |                       2 |                  97 |                    3 |       99 | México             | 97           |  97 |
+| 2020-12-11           | 02d87b       |      2 |     12 |           2 |    2 |            2 |            2 |              2 |              1 | 2020-03-18     | 2020-03-17      | 9999-99-99 |       97 |        2 |   40 |            1 |       97 |                    2 |        2 |        2 |    2 |    2 |        1 |            2 |         2 |              2 |        2 |              2 |          2 |          1 |                  1 |              1 |                       2 |                  97 |                    3 |       99 | México             | 97           |  97 |
+| 2020-12-11           | 05f3d3       |      1 |     12 |           9 |    2 |            9 |            9 |              7 |              2 | 2020-02-27     | 2020-02-22      | 9999-99-99 |        2 |        1 |   36 |            1 |       97 |                    2 |        2 |        2 |    2 |    2 |        2 |            2 |         2 |              2 |        2 |              2 |          1 |          1 |                  1 |              1 |                       2 |                  97 |                    3 |       99 | México             | 97           |   1 |
+| 2020-12-11           | 058df2       |      2 |     12 |          21 |    2 |            7 |           21 |            114 |              1 | 2020-03-23     | 2020-03-18      | 9999-99-99 |       97 |        2 |   44 |            1 |       97 |                    2 |        2 |        2 |    2 |    2 |        2 |            2 |         2 |              2 |        2 |              2 |          2 |          1 |                  1 |              1 |                       2 |                  97 |                    3 |       99 | México             | 97           |  97 |
