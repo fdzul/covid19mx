@@ -6,7 +6,7 @@ Author: Felipe Antonio Dzul Manzanilla <felipe.dzul.m@gmail.com>
 Maintainer: Felipe Antonio Dzul Manzanilla <felipe.dzul.m@gmail.com>
 Description: The covid19mx package provides the Mexican COVID-19 (SARS-COV2) pandemic data into R.
     The dataset is download from Ministry of Health <https://www.gob.mx/salud/documentos/datos-abiertos-152127?idiom=es>.
-License: What license is it under?
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.1
