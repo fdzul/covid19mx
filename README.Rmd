@@ -28,15 +28,12 @@ The goal of covid19mx is to provide the Mexican COVID-19 (SARS-COV2) pandemic da
 
 ## **overview**
 
-**covid19mx** . 
+**covid19mx** package has two dataset:
 
-  - **`gihi()`** calculate gi and hi local spatial statistic.
-  - **`bivariate_map()`** generate a bivariate map.
-  - **`subset_den()`** is a function for subset de dengue dataset.
-  - **`data_geocoden()`** this function creates an address vector and replaces incorrect text.
-  - **`geocoden()`** this function geocodes the addresses of the sinave database using Geocoding API.
-  - **`save_geocoden()`** This function generates the RData file where it contains the geocoded data and the sinave dataset.
-  - **`point_to_polygons()`** this function counts how many events for spatial uni.
+  - **covid19mx20** COVID-19 2020.
+  - **covid19mx21** COVID-19 2021.
+
+
 
 ## Installation
 
@@ -62,14 +59,20 @@ Linux
 # install.packages("remotes")
 remotes::install_github("fdzul/covid19mx")
 ``` 
-## Example
+## covid19mx20 dataset
 
 This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
 ## basic example code
-knitr::kable(head(covid19mx::covid19mx))
+knitr::kable(head(covid19mx::covid19mx20))
 ```
 
+## covid19mx21 dataset
+
+```{r example}
+## basic example code
+knitr::kable(head(covid19mx::covid19mx21))
+```
 
 
